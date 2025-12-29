@@ -638,7 +638,7 @@ jobs:
       - name: "[Setup] Checkout bookverse-infra for shared scripts"
         uses: actions/checkout@v4
         with:
-          repository: yonatanp-jfrog/bookverse-infra
+          repository: tpaz1/bookverse-infra
           path: bookverse-infra
 
       - name: "[Setup] JFrog CLI"
