@@ -85,7 +85,7 @@ def get_jfrog_token() -> Optional[str]:
             return token
             
         print("Warning: JF_OIDC_TOKEN not found. Ensure JFrog CLI is set up with:")
-        print("  uses: EyalDelarea/setup-jfrog-cli@swampUpAppTrust")
+        print("  uses: jfrog/setup-jfrog-cli@v4")
         return None
     except Exception:
         return None
@@ -457,7 +457,7 @@ def main() -> int:
     if not token:
         print("Missing authentication token", file=sys.stderr)
         print("Tried: JF_OIDC_TOKEN, OIDC auto-detection", file=sys.stderr)
-        print("Ensure JFrog CLI is set up with: uses: EyalDelarea/setup-jfrog-cli@swampUpAppTrust", file=sys.stderr)
+        print("Ensure JFrog CLI is set up with: uses: jfrog/setup-jfrog-cli@v4", file=sys.stderr)
         return 2
 
     client = AppTrustClient(base_url, token)
