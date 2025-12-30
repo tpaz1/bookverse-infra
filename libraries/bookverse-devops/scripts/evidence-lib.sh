@@ -91,7 +91,6 @@ evd_create() {
       --predicate-type "$predicate_type" \
       --application-key "${APPLICATION_KEY}" \
       --application-version "${APP_VERSION}" \
-      --project "${PROJECT_KEY}" \
       --provider-id github-actions \
       --key "${EVIDENCE_PRIVATE_KEY:-}" \
       --key-alias "${EVIDENCE_KEY_ALIAS:-${EVIDENCE_KEY_ALIAS_VAR:-}}"; then
