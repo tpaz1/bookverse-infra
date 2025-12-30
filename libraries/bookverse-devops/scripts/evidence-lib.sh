@@ -89,13 +89,13 @@ evd_create() {
       --predicate "$predicate_file" \
       "${md_args[@]}" \
       --predicate-type "$predicate_type" \
-      --release-bundle "${APPLICATION_KEY}" \
-      --release-bundle-version "${APP_VERSION}" \
+      --application-key "${APPLICATION_KEY}" \
+      --application-version "${APP_VERSION}" \
       --project "${PROJECT_KEY}" \
       --provider-id github-actions \
       --key "${EVIDENCE_PRIVATE_KEY:-}" \
       --key-alias "${EVIDENCE_KEY_ALIAS:-${EVIDENCE_KEY_ALIAS_VAR:-}}"; then
-      echo "❌ Failed to attach evidence to release bundle ${APPLICATION_KEY}:${APP_VERSION}" >&2
+      echo "❌ Failed to attach evidence to application ${APPLICATION_KEY}:${APP_VERSION}" >&2
       echo "🔍 Check EVIDENCE_PRIVATE_KEY and EVIDENCE_KEY_ALIAS configuration" >&2
       return 1
     fi

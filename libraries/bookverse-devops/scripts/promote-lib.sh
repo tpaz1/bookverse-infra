@@ -333,8 +333,8 @@ evd_create() {
     --predicate "$predicate_file" \
     "${md_args[@]}" \
     --predicate-type "$predicate_type" \
-    --release-bundle "$APPLICATION_KEY" \
-    --release-bundle-version "$APP_VERSION" \
+    --application-key "$APPLICATION_KEY" \
+    --application-version "$APP_VERSION" \
     --project "${PROJECT_KEY}" \
     --provider-id github-actions \
     --key "${EVIDENCE_PRIVATE_KEY:-}" \
