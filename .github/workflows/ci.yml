@@ -266,7 +266,7 @@ jobs:
           JFROG_CLI_BUILD_NUMBER: ${{ env.BUILD_NUMBER }}
           JFROG_CLI_BUILD_PROJECT: ${{ vars.PROJECT_KEY }}
         with:
-          version: latest
+          version: 2.86.0
           oidc-provider-name: bookverse-infra-github
           oidc-audience: ${{ vars.JFROG_URL }}
           disable-job-summary: false
@@ -456,7 +456,7 @@ jobs:
           JFROG_CLI_BUILD_NUMBER: ${{ env.BUILD_NUMBER }}
           JFROG_CLI_BUILD_PROJECT: ${{ vars.PROJECT_KEY }}
         with:
-          version: latest
+          version: 2.86.0
           oidc-provider-name: bookverse-infra-github
           oidc-audience: ${{ vars.JFROG_URL }}
           disable-job-summary: false
@@ -648,7 +648,7 @@ jobs:
           JF_URL: ${{ vars.JFROG_URL }}
           JF_PROJECT: ${{ vars.PROJECT_KEY }}
         with:
-          version: latest
+          version: 2.86.0
           oidc-provider-name: bookverse-infra-github
           oidc-audience: ${{ vars.JFROG_URL }}
           disable-job-summary: true
